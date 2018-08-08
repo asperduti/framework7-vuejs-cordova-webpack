@@ -1,0 +1,21 @@
+{
+  "name": "com.example.hello",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asperduti/framework7-vuejs-cordova-webpack.git"
+  },
+  "homepage": "https://github.com/asperduti/framework7-vuejs-cordova-webpack",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova:template"
+  ],
+  "author": "Ariel Sperduti",
+  "license": "Apache-2.0"
+}
