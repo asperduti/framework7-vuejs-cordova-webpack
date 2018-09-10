@@ -10,7 +10,7 @@
     "build": "node build/build.js",
     "copy-fonts": "cpy node_modules/framework7-icons/fonts/*.* src/fonts && cpy node_modules/material-design-icons/iconfont/*.{eot,ttf,woff,woff2} src/fonts",
     "postinstall": "npm run copy-fonts",
-    "cordova-build": "npm run build && cordova build",
+    "cordova-build-android": "npm run build && cordova build android --release",
     "cordova-run": "npm run build && cordova run browser",
     "cordova-run-ios": "npm run build && cordova run ios",
     "cordova-run-android": "npm run build && cordova run android"

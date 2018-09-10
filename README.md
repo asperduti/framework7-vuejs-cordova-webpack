@@ -2,49 +2,64 @@
 
 A full-featured Framework7 Vue with Webpack setup with hot-reload & css extraction. Based on [Vue Webpack Boilerplate](https://github.com/vuejs-templates/webpack)
 
+# Getting Started
+
 ## Usage
 
 ### 1. Create a new app from this template
 ```
-$ cordova create hello com.example.hello HelloWorld --template https://github.com/asperduti/framework7-vuejs-cordova-webpack
+$ git clone https://github.com/asperduti/framework7-vuejs-cordova-webpack.git
 ```
 
 ### 2. Install dependencies
 
 Go to the app folder and run:
 ```
-npm install
+$ cd framework7-vuejs-cordova-webpack
+$ npm install
 ```
 
 This will download latest version of Framework7, Framework7-Vue, Vue, Webpack
 
 ### 3. Run the app
 
-The template is prepared to load the cordova.js
+The template is prepared to load the cordova.js for browsers. First you need to add the browser platform
 
 ```
-npm run dev
+$ cordova platform add browser
+$ npm run dev
 ```
 App will be opened in browser at `http://localhost:8080/`
 
 ### 3. Run the app on mobile (Android or iOs)
 
+You need to add the android platform
+
 ```
-npm run cordova-run-android
+$ cordova platform add android
+$ npm run cordova-run-android
 ```
 
-### 4. Build app for production
+### 4.a Build browser app for production
 
 ```
 npm run build
 ```
 
+### 4.b Build android app for production
+
+```
+npm run cordova-build-android
+```
+
+
 ## One command install
 
 ```
-cordova create hello com.example.hello HelloWorld --template https://github.com/asperduti/framework7-vuejs-cordova-webpack &&
-cd hello &&
+git clone https://github.com/asperduti/framework7-vuejs-cordova-webpack.git &&
+cd framework7-vuejs-cordova-webpack &&
 npm install &&
+cordova platform add browser &&
 npm run dev
 ```
 
@@ -70,3 +85,19 @@ npm run build
 * `src/main.js` - main app file where you include/import all required libs and init app
 * `src/routes.js` - app routes
 * `src/app.vue` - main app structure/component
+
+# Upgrading the Template
+
+This template is always being improved by its users, so sometimes one may need to upgrade.
+Ensure there's an upstream remote
+
+If git remote -v doesn't have an upstream listed, you can do the following to add it:
+
+```
+$ git remote add upstream https://github.com/asperduti/framework7-vuejs-cordova-webpack.git
+```
+Pull in the latest changes
+```
+$ git pull upstream master
+```
+There may be merge conflicts, so be sure to fix the files that git lists if they occur. That's it!
