@@ -40,9 +40,12 @@ jspm_packages
 node_modules/
 dist/
 npm-debug.log
-www/
+www/*
+!www/.gitkeep
 src/fonts
 
 # Cordova Dirs
-platforms/
-plugins/
+platforms/*
+!platforms/.gitkeep
+plugins/*
+!plugins/.gitkeep
