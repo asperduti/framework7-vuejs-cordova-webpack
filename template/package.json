@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/framework7io/framework7-template-vue-webpack"
+    "url": "git+https://github.com/asperduti/framework7-vuejs-cordova-webpack.git"
   },
   "keywords": [
     "ios",
@@ -33,9 +33,9 @@
   "author": "Ariel Sperduti",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/framework7io/framework7-template-vue-webpack/issues"
+    "url": "https://github.com/asperduti/framework7-vuejs-cordova-webpack/issues"
   },
-  "homepage": "http://ingeros.com",
+  "homepage": "http://ariel.sperduti.com.ar",
   "dependencies": {
     "cordova-android": "^6.4.0",
     "cordova-browser": "^5.0.3",

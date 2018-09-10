@@ -1,32 +1,37 @@
-# Framework7 Vue + Webpack App Template
+# Framework7 Vuejs Webpack Cordova App Template
 
 A full-featured Framework7 Vue with Webpack setup with hot-reload & css extraction. Based on [Vue Webpack Boilerplate](https://github.com/vuejs-templates/webpack)
 
 ## Usage
 
-### 1. Download this repository
+### 1. Create a new app from this template
 ```
-git clone https://github.com/framework7io/framework7-template-vue-webpack my-app
+$ cordova create hello com.example.hello HelloWorld --template https://github.com/asperduti/framework7-vuejs-cordova-webpack
 ```
 
-Repository will be downloaded into `my-app/` folder
+### 2. Install dependencies
 
-### 2. Instal dependencies
-
-Go to the downloaded repository folder and run:
+Go to the app folder and run:
 ```
 npm install
 ```
 
-This will download latest version of Framework7, Framework7-Vue, Vue and required icon fonts (to `/src/fonts/`)
+This will download latest version of Framework7, Framework7-Vue, Vue, Webpack
 
 ### 3. Run the app
+
+The template is prepared to load the cordova.js
 
 ```
 npm run dev
 ```
-
 App will be opened in browser at `http://localhost:8080/`
+
+### 3. Run the app on mobile (Android or iOs)
+
+```
+npm run cordova-run-android
+```
 
 ### 4. Build app for production
 
@@ -34,30 +39,11 @@ App will be opened in browser at `http://localhost:8080/`
 npm run build
 ```
 
-The output will be at `www/` folder
-
-## Use with cordova
-Cordova is not enabled by default, so make sure to remove the comment tags around the "<script src="cordova.js"></script>" line in [projectroot]/index.html
-```
-<body>
-  <div id="app"></div>
-
-  <!-- Cordova -->
-
-  <script src="cordova.js"></script>
-
-  <!-- built script files will be auto injected -->
-</body>
-```
-It will be added during the build process to Android/iOS. 
-
-Just put the contents of `www` folder in your cordova's project root `www` folder
-
 ## One command install
 
 ```
-git clone https://github.com/framework7io/framework7-template-vue-webpack my-app &&
-cd my-app &&
+cordova create hello com.example.hello HelloWorld --template https://github.com/asperduti/framework7-vuejs-cordova-webpack &&
+cd hello &&
 npm install &&
 npm run dev
 ```
